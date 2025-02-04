@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="shortcut icon" href="src/image/favicon.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -65,6 +65,22 @@
           </a>
         </div>
         <!-- Fim Botão Contato -->
+        <div class="btn-abrir" id="btn-abrir"><i class="fa-solid fa-bars"></i></div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="fa-solid fa-xmark"></i>  
+          </div><!--btn fechar-->
+            
+            <nav>
+            <ul>
+              <li><a href="#inicio" class="selected">Inicio</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Projetos</a></li>
+              <li><a href="#formulario">Contato</a></li>
+            </ul>
+            </nav>
+        </div><!--fim menu mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
       </div>
       <!-- Fim Interface -->
     </header>
@@ -114,14 +130,14 @@
       <section class="habilidades" id="habilidades">
         <div class="interface">
           <h2 class="titulo">Minhas <span>Habilidades</span></h2>
-          <div class="flex">
-            <!-- Habilidades -->
-            <div class="habilidades-box">
+            <div class="flex habilidades-container">
+              <!-- Habilidades -->
+              <div class="habilidades-box">
               <i class="fa-brands fa-html5"></i>
               <h3>HTML5</h3>
               <p>Estruturação semântica e acessível</p>
-            </div>
-            <div class="habilidades-box">
+              </div>
+              <div class="habilidades-box">
               <i class="fa-brands fa-css3-alt"></i>
               <h3>CSS3</h3>
               <p>Estilização avançada e animações</p>
@@ -142,7 +158,7 @@
               <p>Controle de versão</p>
             </div>
             <!-- Fim Habilidades -->
-          </div>
+            </div>
           <!-- Fim Flex -->
         </div>
         <!-- Fim Interface -->
@@ -189,7 +205,7 @@
       <!-- Fim Seção Sobre -->
 
       <!-- Seção Portfólio -->
-      <!--<section class="portfolio" id="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="interface">
           <h2 class="titulo">Meus <span>Projetos</span></h2>
           <div class="flex">
@@ -304,5 +320,6 @@
       </div>
       <!--interface-->
     </footer>
+    <script src="src/javascript/script.js" defer></script>
   </body>
 </html>
