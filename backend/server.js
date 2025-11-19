@@ -11,7 +11,6 @@ app.use(express.json());
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
-// Helper pra pegar texto seguro
 function getText(prop) {
   if (!prop) return "";
   if (prop.type === "title" && prop.title.length > 0)
@@ -34,7 +33,7 @@ app.get("/projects", async (req, res) => {
         title: getText(p.Title),
         description_EN: getText(p.Description_EN),
         description_PT: getText(p.Description_PT),
-        tech: getText(p.Tech),
+        tech: p.Tech?.multi_select?.map((t) => t.name) || [],
         github: p.Github?.url || "",
         demo: p.Demo?.url || "",
         status: p.Status?.select?.name || "",
