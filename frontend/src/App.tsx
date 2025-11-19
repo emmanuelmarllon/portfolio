@@ -6,7 +6,7 @@ import { SkillsSection } from "./components/SkillsSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
-import profileImg from "./assets/profile.png";
+import profileImg from "./public/profile.png";
 
 export default function App() {
   console.log(
