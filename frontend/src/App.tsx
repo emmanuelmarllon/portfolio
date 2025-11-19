@@ -6,6 +6,7 @@ import { SkillsSection } from "./components/SkillsSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
+import profileImg from "./assets/profile.png";
 
 export default function App() {
   console.log(
@@ -26,7 +27,7 @@ export default function App() {
         <HeroSection
           name="M.Emanuel"
           title="Fullstack Web Developer"
-          imageUrl="src/assets/profile.png"
+          imageUrl={profileImg}
         />
         <AboutSection />
         <SkillsSection />
